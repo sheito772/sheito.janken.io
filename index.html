@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>じゃんけん</title>
+        <meta charset="UTF-8">
+        <link href="./main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="main">
+                <h1>じゃんけんをしてみよう！</h1>
+
+                <h2>ボタンを押してください</h2>
+                <p class="action">
+                    <button onclick="play(`rock`)" class="btn rock">グー</button>
+                    <button onclick="play(`scissors`)" class="btn scissors">チョキ</button>
+                    <button onclick="play(`paper`)" class="btn paper">パー</button>
+                </p>
+
+                <table>
+                    <!-- どちらが選択したのか表示 -->
+                    <tr>
+                        <td>コンピューターの手</td>
+                        <td>あなたの手</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- コンピュータの選択を表示 -->
+                            <img id="computerChoiceImg" width="250" src="./img/unknown.png">
+                        </td>
+                        <td>
+                            <!-- ユーザーの選択を表示 -->
+                            <img id="yourChoiceImg" width="250" src="./img/unknown.png">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="history"></div>
+        </div>
+
+        <!-- じゃんけんギミック -->
+        <script src="./main.js"></script>
+    </body>
+</html>

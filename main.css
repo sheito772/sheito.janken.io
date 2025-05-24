@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.content{
+    overflow: hidden;
+}
+
+.main {
+    width: auto;
+    float: left;
+}
+
+.action{
+    text-align: center;
+}
+
+.btn,
+a.btn,
+button{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -mos-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-radius: 0.5rem;
+}
+
+.btn:hover,
+a.btn:hover{
+    opacity: 0.6;
+}
+
+.rock{
+    background-color: green;
+    color: white;
+}
+
+.scissors{
+    background-color: yellow;
+    color: black;
+}
+
+.paper{
+    background-color: deeppink;
+    color: black;
+}
+
+table {
+    display: flex;
+    justify-content: space-around; /* 子要素を均等に配置します */
+    
+}
+
+table th,
+table td{
+    border: 1px solid #CCCCCC;
+}
+
+#history{
+    float: right;
+    margin-left: auto;
+    text-align: center;
+    border-bottom: 1px solid slateblue;
+}
